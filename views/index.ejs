@@ -1,8 +1,8 @@
 <%- include('./partials/head') %>
 
-<nav>
-  <!-- <img src="./assets/fdndpng.png" alt="" /> -->
-</nav>
+<header>
+  <p>Squad-A <span>Members</span></p>
+</header>
 
 <main>
   <div class="page">
@@ -24,9 +24,10 @@
           <% if (member.avatar) { %>
           <img src="<%= member.avatar %>" alt="De avatar van <%= member.name %>" />
           <% }else{ %>
-          <img src="/placeholder.jpg" alt="Placeholder avatar" />
+          <img src="./public/assets/placeholder.jpg" alt="Placeholder avatar" />
           <% } %>
           <h2><%= member.name %> <%= member.prefix %> <%= member.surname %></h2>
+          <h4><%= member.gitHubHandle %></h4>
         </div>
         <% }) %>
       </div>

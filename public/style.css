@@ -7,6 +7,12 @@
 :root {
   --background-colour: #123155;
   --indian-colour: #e5625e;
+  --gradient-colour: linear-gradient(
+    90deg,
+    rgba(91, 87, 149, 1) 15%,
+    rgba(229, 98, 94, 1) 100%,
+    rgba(0, 212, 255, 1) 100%
+  );
   --battleship-colour: #7a918d;
   --seashell-colour: #fff3f0;
   --light-colour: #f2d0a9;
@@ -20,15 +26,31 @@ body {
   width: 100%;
 }
 
-nav {
+/*  Header  */
+
+Header {
   background-color: var(--light-colour);
-  height: 5rem;
+  border-radius: var(--border-radius);
+  transform: translateY(10px);
+  margin: 0 auto;
+  height: 15vw;
+  width: 70%;
 }
 
-nav img {
-  width: 50px;
-  height: 50px;
+header p {
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-size: 4vw;
+  display: flex;
+  height: 100%;
 }
+
+header span {
+  color: #7a918d;
+}
+
+/*  Main  */
 
 main {
   width: 100%;
@@ -62,6 +84,8 @@ li {
   list-style: none;
 }
 
+/*  Styling cards   */
+
 .overview {
   border-radius: var(--border-radius);
   border: inset var(--light-colour);
@@ -77,7 +101,6 @@ li {
 .cards {
   justify-content: center;
   flex-direction: row;
-  position: relative;
   flex-wrap: wrap;
   display: flex;
   height: 100%;
@@ -88,7 +111,9 @@ li {
 .card {
   display: flex;
   justify-content: center;
-  background-color: var(--indian-colour);
+  align-items: center;
+  flex-direction: column;
+  background: var(--gradient-colour);
   border-radius: var(--border-radius);
   transition: 0.4s;
   height: 24rem;
@@ -96,8 +121,21 @@ li {
 }
 
 .card img {
-  width: 50px;
-  height: 50px;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.card h2,
+.card h4 {
+  margin-top: 2rem;
+}
+
+.card h4 {
+  background-color: var(--battleship-colour);
+  border-radius: var(--border-radius);
+  padding: 0.5rem;
 }
 
 .card:hover {
