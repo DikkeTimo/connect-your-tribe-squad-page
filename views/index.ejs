@@ -1,7 +1,7 @@
 <%- include('./partials/head') %>
 
 <nav>
-  <img src="/assets/fdnd.jpeg" alt="" />
+  <!-- <img src="./assets/fdndpng.png" alt="" /> -->
 </nav>
 
 <main>
@@ -18,14 +18,23 @@
       </details>
     </div>
     <div class="overview">
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
+      <div class="cards">
+        <% squad.members.forEach(member => { %>
+        <div class="card">
+          <% if (member.avatar) { %>
+          <img src="<%= member.avatar %>" alt="De avatar van <%= member.name %>" />
+          <% }else{ %>
+          <img src="/placeholder.jpg" alt="Placeholder avatar" />
+          <% } %>
+          <h2><%= member.name %> <%= member.prefix %> <%= member.surname %></h2>
+        </div>
+        <% }) %>
+      </div>
     </div>
   </div>
 </main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
 
 <%- include('./partials/foot') %>

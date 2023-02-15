@@ -17,11 +17,17 @@ body {
   background-color: var(--background-colour);
   font-family: "Ubuntu", sans-serif;
   font-weight: 400;
+  width: 100%;
 }
 
 nav {
   background-color: var(--light-colour);
   height: 5rem;
+}
+
+nav img {
+  width: 50px;
+  height: 50px;
 }
 
 main {
@@ -60,24 +66,41 @@ li {
   border-radius: var(--border-radius);
   border: inset var(--light-colour);
   border-width: 2px 2px 0 2px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 4rem;
-  padding-top: 4rem;
   padding-bottom: 4rem;
+  overflow-y: scroll;
+  padding-top: 4rem;
   height: 100%;
+  width: 100%;
+  gap: 4rem;
+}
+
+.cards {
+  justify-content: center;
+  flex-direction: row;
+  position: relative;
+  flex-wrap: wrap;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  gap: 20px;
 }
 
 .card {
+  display: flex;
+  justify-content: center;
   background-color: var(--indian-colour);
   border-radius: var(--border-radius);
   transition: 0.4s;
-  width: 16rem;
   height: 24rem;
+  width: 30%;
+}
+
+.card img {
+  width: 50px;
+  height: 50px;
 }
 
 .card:hover {
-  scale: 1.05;
   transition: 0.4s;
+  scale: 1.05;
 }

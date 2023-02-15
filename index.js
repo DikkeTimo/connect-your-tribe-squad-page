@@ -2,8 +2,10 @@
 import express from "express";
 
 // Haalt data van de api
-const url = "https://whois.fdnd.nl/api/v1/member/dikketimo";
+const url = "https://whois.fdnd.nl/api/v1/squad/squad-a-2022";
 const data = await fetch(url).then((response) => response.json());
+
+console.log("url");
 // await is het wachten van de fetch voordat js verder gaat
 
 // Maak een nieuwe express app aan
