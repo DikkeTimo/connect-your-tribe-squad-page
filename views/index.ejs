@@ -7,15 +7,12 @@
 <main>
   <div class="page">
     <div class="text">
-      <h1></h1>
-      <details>
-        <summary>Codeer taal</summary>
-        <ul>
-          <li>HTMl</li>
-          <li>CSS</li>
-          <li>JS</li>
-        </ul>
-      </details>
+      <h1>Favoriete codeertaal</h1>
+      <p>
+        <a href="#">HTML</a>
+        <a href="#">CSS</a>
+        <a href="#">JS</a>
+      </p>
     </div>
     <div class="overview">
       <div class="cards">
@@ -23,11 +20,13 @@
         <div class="card">
           <% if (member.avatar) { %>
           <img src="<%= member.avatar %>" alt="De avatar van <%= member.name %>" />
-          <% }else{ %>
-          <img src="./public/assets/placeholder.jpg" alt="Placeholder avatar" />
+          <% } else{ %>
+          <img src="public/assets/placeholder.jpg" alt="Placeholder avatar" />
           <% } %>
+
           <h2><%= member.name %> <%= member.prefix %> <%= member.surname %></h2>
           <h4><%= member.gitHubHandle %></h4>
+          <p><%= member.id %></p>
         </div>
         <% }) %>
       </div>
