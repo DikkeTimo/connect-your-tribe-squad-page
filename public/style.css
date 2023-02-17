@@ -70,6 +70,12 @@ main {
   height: 5rem;
 }
 
+.text p {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
 .text h1 {
   color: #fff;
   height: 10vh;
@@ -94,7 +100,7 @@ main {
 
   transform: scaleX(0);
   transform-origin: left;
-  transition: transform 0.2s ease-in;
+  transition: transform 0.25s ease-in;
 }
 
 .text a:hover::after {
@@ -105,7 +111,6 @@ main {
 /*  Styling cards   */
 
 .overview {
-  position: relative;
   border-radius: var(--border-radius);
   border: inset var(--light-colour);
   border-width: 2px 2px 0 2px;
@@ -118,6 +123,7 @@ main {
 }
 
 .cards {
+  cursor: pointer;
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
@@ -129,6 +135,7 @@ main {
 
 .card {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   flex-direction: column;
