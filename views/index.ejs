@@ -9,10 +9,9 @@
     <div class="text">
       <h1>Favoriete codeertaal</h1>
       <p>
-        <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
         <svg
-          width="25px"
-          height="25px"
+          width="30px"
+          height="30px"
           viewBox="0 0 24 24"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -32,17 +31,19 @@
     <div class="overview">
       <div class="cards">
         <% squad.members.forEach(member => { %>
-        <div class="card">
-          <img
-            class="card-img"
-            src="<%= member.avatar %>"
-            alt="Profiel foto van <%= member.name %>"
-            onerror="this.onerror=null;this.src='https://avatars.githubusercontent.com/u/50839234?s=280&v=4';"
-          />
-          <h2><%= member.name %> <%= member.prefix %> <%= member.surname %></h2>
-          <h4><%= member.gitHubHandle %></h4>
-          <p><%= member.id %></p>
-        </div>
+        <a id="website" href="<%= member.website %>">
+          <div class="card">
+            <img
+              class="card-img"
+              src="<%= member.avatar %>"
+              alt="Profiel foto van <%= member.name %>"
+              onerror="this.onerror=null;this.src='/assets/fdnd.jpeg';"
+            />
+            <h2><%= member.name %> <%= member.prefix %> <%= member.surname %></h2>
+            <h4><%= member.gitHubHandle %></h4>
+            <p><%= member.id %></p>
+          </div>
+        </a>
         <% }) %>
       </div>
     </div>

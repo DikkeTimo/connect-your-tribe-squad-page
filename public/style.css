@@ -84,7 +84,7 @@ main {
 
 .text a {
   position: relative;
-  font-size: 20px;
+  font-size: 25px;
   color: #fff;
   text-decoration: none;
 }
@@ -123,14 +123,18 @@ main {
 }
 
 .cards {
-  cursor: pointer;
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
   display: flex;
+  align-items: center;
   height: 100%;
   width: 100%;
   gap: 20px;
+}
+
+#website {
+  text-decoration: none;
 }
 
 .card {
@@ -143,7 +147,7 @@ main {
   border-radius: var(--border-radius);
   transition: 0.4s;
   height: 24rem;
-  width: 30%;
+  width: 18rem;
   box-shadow: rgba(121, 121, 122, 0.25) 0px 13px 27px -5px,
     rgba(123, 123, 123, 0.3) 0px 8px 16px -8px;
 }
@@ -169,4 +173,24 @@ main {
 .card:hover {
   transition: 0.4s;
   scale: 1.05;
+}
+
+/* Breakpoint */
+
+@media (max-width: 500px) {
+  .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .text h1 {
+    width: 50%;
+    margin-bottom: 2rem;
+  }
+
+  .overview {
+    border: none;
+  }
 }
