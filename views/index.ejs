@@ -31,7 +31,7 @@
     <div class="overview">
       <div class="cards">
         <% squad.members.forEach(member => { %>
-        <a id="website" href="<%= member.website %>">
+        <a id="website" href="<%= member.website %>" target="_blank">
           <div class="card">
             <img
               class="card-img"
@@ -40,7 +40,7 @@
               onerror="this.onerror=null;this.src='/assets/fdnd.jpeg';"
             />
             <h2><%= member.name %> <%= member.prefix %> <%= member.surname %></h2>
-            <h4><%= member.gitHubHandle %></h4>
+            <h4 id="github"><%= member.gitHubHandle %></h4>
             <p><%= member.id %></p>
           </div>
         </a>
