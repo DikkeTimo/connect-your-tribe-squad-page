@@ -23,9 +23,9 @@
             fill="#fff"
           />
         </svg>
-        <a href="#">HTML</a>
-        <a href="#">CSS</a>
-        <a href="#">JS</a>
+        <a href="/?squad=squad-a-2022" class="filterBTN">Squad A</a>
+        <a href="/?squad=squad-b-2022" class="filterBTN">Squad B</a>
+        <a href="/?squad=squat-c-2022" class="filterBTN">Squad C</a>
       </p>
     </div>
     <div class="overview">
@@ -40,8 +40,12 @@
               onerror="this.onerror=null;this.src='/assets/fdnd.jpeg';"
             />
             <h2><%= member.name %> <%= member.prefix %> <%= member.surname %></h2>
-            <h4 id="github"><%= member.gitHubHandle %></h4>
-            <p><%= member.id %></p>
+            <h4 id="github">
+              <%= member.gitHubHandle %>
+              <div class="back">
+                <p><%= member.id %></p>
+              </div>
+            </h4>
           </div>
         </a>
         <% }) %>

@@ -165,7 +165,7 @@ main {
 
 .card h4 {
   cursor: grab;
-  background-color: var(--battleship-colour);
+  background-color: #f2d0a9;
   border-radius: var(--border-radius);
   padding: 0.5rem;
 }
