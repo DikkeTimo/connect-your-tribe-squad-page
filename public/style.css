@@ -26,7 +26,13 @@ body {
   width: 100%;
 }
 
-/*  Header  */
+/* 
+  _   _                _           
+ | | | | ___  __ _  __| | ___ _ __ 
+ | |_| |/ _ \/ _` |/ _` |/ _ \ '__|
+ |  _  |  __/ (_| | (_| |  __/ |   
+ |_| |_|\___|\__,_|\__,_|\___|_|                                   
+ */
 
 header {
   background-color: var(--light-colour);
@@ -50,7 +56,14 @@ header span {
   color: #7a918d;
 }
 
-/*  Main  */
+/*  
+  __  __       _       
+ |  \/  | __ _(_)_ __  
+ | |\/| |/ _` | | '_ \ 
+ | |  | | (_| | | | | |
+ |_|  |_|\__,_|_|_| |_|
+                       
+*/
 
 main {
   width: 100%;
@@ -106,7 +119,13 @@ main {
   transform-origin: right;
 }
 
-/*  Styling cards   */
+/*  
+   ____              _     
+  / ___|__ _ _ __ __| |___ 
+ | |   / _` | '__/ _` / __|
+ | |__| (_| | | | (_| \__ \
+  \____\__,_|_|  \__,_|___/                       
+*/
 
 .overview {
   border-radius: var(--border-radius);
@@ -183,7 +202,14 @@ main {
   scale: 1.05;
 }
 
-/* Breakpoint */
+/* 
+  ____                 _                _       _   
+ | __ ) _ __ ___  __ _| | ___ __   ___ (_)_ __ | |_ 
+ |  _ \| '__/ _ \/ _` | |/ / '_ \ / _ \| | '_ \| __|
+ | |_) | | |  __/ (_| |   <| |_) | (_) | | | | | |_ 
+ |____/|_|  \___|\__,_|_|\_\ .__/ \___/|_|_| |_|\__|
+                           |_|                      
+*/
 
 @media (max-width: 500px) {
   .text {
@@ -194,8 +220,17 @@ main {
   }
 
   .text h1 {
-    width: 50%;
-    margin-bottom: 2rem;
+    margin-top: 2rem;
+    text-align: center;
+    width: 100%;
+  }
+
+  .text svg {
+    width: 50px;
+  }
+
+  .text p {
+    margin-top: 1rem;
   }
 
   .overview {

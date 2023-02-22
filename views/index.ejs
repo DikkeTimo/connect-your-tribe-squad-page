@@ -23,9 +23,9 @@
             fill="#fff"
           />
         </svg>
-        <a href="/?squad=squad-a-2022" class="filterBTN">Squad A</a>
-        <a href="/?squad=squad-b-2022" class="filterBTN">Squad B</a>
-        <a href="/?squad=squat-c-2022" class="filterBTN">Squad C</a>
+        <a href="/?squad=squad-a-2022" class="filter">Squad A</a>
+        <a href="/?squad=squad-b-2022" class="filter">Squad B</a>
+        <a href="/?squad=squat-c-2022" class="filter">Squad C</a>
       </p>
     </div>
     <div class="overview">
@@ -34,6 +34,8 @@
         <% squad.members.forEach(member => { %>
         <a id="website" href="<%= member.website %>" target="_blank">
           <div class="card">
+            <!-- Als de member een avatar heeft ingesteld wordt deze geladen, 
+              zo niet is er een error en wordt uit het mapjes assets een afbeelding gehaald. -->
             <img
               class="card-img"
               src="<%= member.avatar %>"
