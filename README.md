@@ -23,6 +23,18 @@
 
 <!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met Javascript gedaan en hoe? Misschien heb je een framwork of library gebruikt? -->
 
+- Node
+
+Hiermee kan je javascript schrijven niet op de client-side maar server-side.
+
+- Express
+
+Express is een node framework die wij gebruiken 
+
+- EJS
+
+Dit een template engine voor javascript, je gebruik maken van js in je html file.
+
 ## Installatie
 
 <!-- Bij Installatie staat stap-voor-stap beschreven hoe je de development omgeving moet inrichten om aan de repository te kunnen werken. -->
