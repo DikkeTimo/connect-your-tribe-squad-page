@@ -30,6 +30,7 @@
     </div>
     <div class="overview">
       <div class="cards">
+        <!-- Hier haal ik alle members uit de squad -->
         <% squad.members.forEach(member => { %>
         <a id="website" href="<%= member.website %>" target="_blank">
           <div class="card">
@@ -39,6 +40,7 @@
               alt="Profiel foto van <%= member.name %>"
               onerror="this.onerror=null;this.src='/assets/fdnd.jpeg';"
             />
+            <!-- Hier wordt naam, prefix en surname opgehaald uit de api -->
             <h2><%= member.name %> <%= member.prefix %> <%= member.surname %></h2>
             <h4 id="github">
               <%= member.gitHubHandle %>
