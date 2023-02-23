@@ -93,6 +93,11 @@ main {
   color: #fff;
 }
 
+.text input {
+  padding: 0.5rem;
+  border: none;
+}
+
 .text a {
   position: relative;
   font-size: 25px;

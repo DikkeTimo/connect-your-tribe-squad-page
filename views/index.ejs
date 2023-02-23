@@ -8,6 +8,13 @@
   <div class="page">
     <div class="text">
       <h1>Squad</h1>
+      <input
+        id="searchbar"
+        class="searchbar"
+        type="text"
+        name="search"
+        placeholder="Zoek hier"
+      />
       <p>
         <svg
           width="30px"
@@ -32,7 +39,7 @@
       <div class="cards">
         <!-- Hier haal ik alle members uit de squad -->
         <% squad.members.forEach(member => { %>
-        <a id="website" href="<%= member.website %>" target="_blank">
+        <a class="members" id="website" href="<%= member.website %>" target="_blank">
           <div class="card">
             <!-- Als de member een avatar heeft ingesteld wordt deze geladen, 
               zo niet is er een error en wordt uit het mapjes assets een afbeelding gehaald. -->
@@ -45,13 +52,15 @@
             <!-- Hier wordt naam, prefix en surname opgehaald uit de api -->
             <h2><%= member.name %> <%= member.prefix %> <%= member.surname %></h2>
             <h4 id="github"><%= member.gitHubHandle %></h4>
-            <p>
-              Colour:<span style="color: <%= member.colour?.hex %>">
-                <% if(member.colour?.hex) { %> <%= member.colour?.hex %>
-              </span>
-              <% } else { %>
-              <span style="color: rgb(255, 255, 255)">No colour selected <% } %> </span>
-            </p>
+            <article>
+              <p>
+                Colour:<span style="color: <%= member.colour?.hex %>">
+                  <% if(member.colour?.hex) { %> <%= member.colour?.hex %>
+                </span>
+                <% } else { %>
+                <span style="color: rgb(255, 255, 255)">No colour selected <% } %> </span>
+              </p>
+            </article>
           </div>
         </a>
         <% }) %>
