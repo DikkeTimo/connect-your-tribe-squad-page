@@ -23,9 +23,9 @@
             fill="#fff"
           />
         </svg>
-        <a href="/?squad=squad-a-2022" class="filter">Squad A</a>
-        <a href="/?squad=squad-b-2022" class="filter">Squad B</a>
-        <a href="/?squad=squat-c-2022" class="filter">Squad C</a>
+        <a href="/?squad=squad-a-2022" class="filter">A</a>
+        <a href="/?squad=squad-b-2022" class="filter">B</a>
+        <a href="/?squad=squat-c-2022" class="filter">C</a>
       </p>
     </div>
     <div class="overview">
@@ -44,12 +44,14 @@
             />
             <!-- Hier wordt naam, prefix en surname opgehaald uit de api -->
             <h2><%= member.name %> <%= member.prefix %> <%= member.surname %></h2>
-            <h4 id="github">
-              <%= member.gitHubHandle %>
-              <div class="back">
-                <p><%= member.id %></p>
-              </div>
-            </h4>
+            <h4 id="github"><%= member.gitHubHandle %></h4>
+            <p>
+              Colour:<span style="color: <%= member.colour?.hex %>">
+                <% if(member.colour?.hex) { %> <%= member.colour?.hex %>
+              </span>
+              <% } else { %>
+              <span style="color: rgb(255, 255, 255)">No colour selected <% } %> </span>
+            </p>
           </div>
         </a>
         <% }) %>
