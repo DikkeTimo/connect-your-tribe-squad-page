@@ -36,7 +36,7 @@ Express is een node framework die wij gebruiken
 
 - EJS
 
-Dit een template engine voor javascript, je gebruik maken van js in je html file.
+Dit een template engine voor javascript, je kan gebruik maken van js in je html file.
 
 ## Installatie
 
