@@ -4,6 +4,9 @@
 
 <!-- Geef je project een titel en schrijf in één zin wat het is -->
 
+<h1>Squad Page</h1>
+
+<img width="60%" src="/public/assets/squadpage.png">
 ## Inhoudsopgave
 
 - [Beschrijving](#beschrijving)
@@ -14,6 +17,8 @@
 - [Licentie](#licentie)
 
 ## Beschrijving
+
+<p>Op de squad pagina kan je zien welke leerlingen er in het eerste jaar zitten van squad a, b en c.</p>
 
 <!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
 <!-- Voeg een mooie poster visual toe 📸 -->
@@ -29,13 +34,15 @@ Hiermee kan je javascript schrijven niet op de client-side maar server-side.
 
 - Express
 
-Express is een node framework die wij gebruiken 
+Express is een node framework die wij gebruiken
 
 - EJS
 
 Dit een template engine voor javascript, je gebruik maken van js in je html file.
 
 ## Installatie
+
+Clone het project en open de terminal. Type `npm install` om alle packages te installeren en `npm start` op de live versie te bekijken.
 
 <!-- Bij Installatie staat stap-voor-stap beschreven hoe je de development omgeving moet inrichten om aan de repository te kunnen werken. -->
 
