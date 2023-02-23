@@ -1,10 +1,8 @@
 <!-- > _Fork_ deze leertaak en ga aan de slag. Onderstaande outline ga je gedurende deze taak in jouw eigen GitHub omgeving uitwerken. De instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md) -->
 
-# Titel
+# Squadpage
 
 <!-- Geef je project een titel en schrijf in één zin wat het is -->
-
-<h1>Squad Page</h1>
 
 <img width="60%" src="/public/assets/squadpage.png">
 ## Inhoudsopgave
@@ -48,7 +46,11 @@ Clone het project en open de terminal. Type `npm install` om alle packages te in
 
 ## Gebruik
 
+Doormiddel van de filter kan je op squad filteren.
+
 ## Bronnen
+
+https://whois.fdnd.nl/
 
 ## Licentie
 
